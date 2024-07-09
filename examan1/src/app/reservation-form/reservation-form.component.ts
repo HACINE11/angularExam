@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ActivatedRoute, Router } from '@angular/router';
-
 import { PropertyService } from '../services/property.service';
-
 import {FormBuilder, FormGroup, MinLengthValidator, Validators} from '@angular/forms';
-
 import { Reservation } from '../models/reservation';
 import { Property } from '../models/property';
 
@@ -17,9 +13,7 @@ import { Property } from '../models/property';
 export class ReservationFormComponent implements OnInit{
 
   propertyID: string | null = "";
-
   reservationForm: FormGroup = new FormGroup({});
-
   property!: Property;
 
   constructor(

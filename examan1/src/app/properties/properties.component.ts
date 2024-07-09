@@ -41,9 +41,7 @@ changed() {
 }
 
 
-reservation(id: number) {
-    this.router.navigate(['/reserve', id]);
-}
+reservation(id: number) { this.router.navigate(['/reserve', id]); }
 
 delete(id: number) {
       this.propertyService.deleteProperties(id).subscribe(data => {

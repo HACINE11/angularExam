@@ -14,16 +14,13 @@ import { switchMap } from 'rxjs/operators';
 })
 export class PropertyService {
 
-  baseUrl: string = 'http://localhost:3000/';
-
-
-  private properties: Property[] = [];
-
   constructor( private http: HttpClient ) { }
 
-  // CRUD Properties
+  
+  baseUrl: string = 'http://localhost:3000/';
   apiUrlProperties: string = this.baseUrl + 'properties/';
 
+  // A.P.I : Properties
   getProperties(): Observable<Property[]>{
     return this.http.get<Property[]>(this.apiUrlProperties);
   }
