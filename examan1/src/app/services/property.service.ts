@@ -19,9 +19,7 @@ export class PropertyService {
 
   private properties: Property[] = [];
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor( private http: HttpClient ) { }
 
   // CRUD Properties
   apiUrlProperties: string = this.baseUrl + 'properties/';

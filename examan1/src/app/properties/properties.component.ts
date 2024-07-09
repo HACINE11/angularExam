@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Property } from '../models/property';
-
 import { PropertyService } from '../services/property.service';
-
 import { Router } from '@angular/router';
-
 import { FormsModule } from '@angular/forms';
 
 
@@ -15,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './properties.component.html',
   styleUrls: ['./properties.component.css']
 })
+
 export class PropertiesComponent implements OnInit{
 
   constructor(
@@ -26,7 +23,6 @@ export class PropertiesComponent implements OnInit{
   max!: number;
   
   propertyList: Property[] = [];
-
   filteredPropertyList: Property[] = [];
 
 ngOnInit(): void {

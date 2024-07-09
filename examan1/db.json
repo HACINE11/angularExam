@@ -1,4 +1,30 @@
 {
-  "properties": [],
+  "properties": [
+    {
+      "id": 1,
+      "name": "Maison de campane",
+      "address":"456 chemin des Fleurs",
+      "price":250,
+      "available": true
+
+      
+  },
+  {
+    "id": 2,
+      "name": "Studio Centre ville",
+      "address":"789 ELMNIHLA",
+      "price":800,
+      "available": true
+
+
+  },
+  {  "id": 3,
+  "name": "ENHALI",
+  "adresse": "hfjlhfdsqjk",
+  "price": 30,
+  "available": true}
+
+
+  ],
   "reservation": []
 }
